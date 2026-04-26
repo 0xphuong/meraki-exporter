@@ -1,0 +1,28 @@
+name: Bug Report
+description: Report a bug or unexpected behavior
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant Logs
+      render: shell
+  - type: input
+    id: version
+    attributes:
+      label: Version / Docker Tag
+      placeholder: "v1.1.0"
+    validations:
+      required: true
